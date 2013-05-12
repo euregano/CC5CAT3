@@ -1,12 +1,8 @@
 apply plugin: 'java'
 apply plugin: 'eclipse'
 
-sourceCompatibility = 1.5
-version = '0.1'
 jar {
-    manifest {
-        attributes 'Implementation-Title': 'DNA Sequencing', 'Implementation-Version': version
-    }
+    manifest.attributes("Main-Class": "dnasequencer.Main")
 }
 
 repositories {
